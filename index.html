@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AI Tools Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2em;
+            margin-bottom: 50px;
+        }
+        
+        .category {
+            margin-bottom: 50px;
+        }
+        
+        .category-title {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+        
+        .tool-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .tool-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #667eea;
+        }
+        
+        .tool-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .tools-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
+            
+            .tool-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 My AI Tools Dashboard</h1>
+        <p class="subtitle">One-click access to all your AI tools</p>
+        
+        <!-- Text/Chat AI -->
+        <div class="category">
+            <h2 class="category-title">🤖 Text & Chat AI</h2>
+            <div class="tools-grid">
+                <a href="https://chat.openai.com" class="tool-card" target="_blank">
+                    <div class="tool-icon">💬</div>
+                    <div class="tool-name">ChatGPT</div>
+                    <div class="tool-description">OpenAI's conversational AI</div>
+                </a>
+                
+                <a href="https://claude.ai" class="tool-card" target="_blank">
+                    <div class="tool-icon">🧠</div>
+                    <div class="tool-name">Claude</div>
+                    <div class="tool-description">Anthropic's AI assistant</div>
+                </a>
+                
+                <a href="https://gemini.google.com" class="tool-card" target="_blank">
+                    <div class="tool-icon">✨</div>
+                    <div class="tool-name">Gemini</div>
+                    <div class="tool-description">Google's AI model</div>
+                </a>
+                
+                <a href="https://www.perplexity.ai" class="tool-card" target="_blank">
+                    <div class="tool-icon">🔍</div>
+                    <div class="tool-name">Perplexity</div>
+                    <div class="tool-description">AI-powered search</div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Image Generation -->
+        <div class="category">
+            <h2 class="category-title">🎨 Image Generation</h2>
+            <div class="tools-grid">
+                <a href="https://www.midjourney.com" class="tool-card" target="_blank">
+                    <div class="tool-icon">🖼️</div>
+                    <div class="tool-name">Midjourney</div>
+                    <div class="tool-description">AI art generation</div>
+                </a>
+                
+                <a href="https://labs.openai.com" class="tool-card" target="_blank">
+                    <div class="tool-icon">🎭</div>
+                    <div class="tool-name">DALL-E</div>
+                    <div class="tool-description">OpenAI's image creator</div>
+                </a>
+                
+                <a href="https://stability.ai" class="tool-card" target="_blank">
+                    <div class="tool-icon">🌈</div>
+                    <div class="tool-name">Stable Diffusion</div>
+                    <div class="tool-description">Open-source image AI</div>
+                </a>
+                
+                <a href="https://www.canva.com/ai-image-generator/" class="tool-card" target="_blank">
+                    <div class="tool-icon">🎨</div>
+                    <div class="tool-name">Canva AI</div>
+                    <div class="tool-description">Design with AI</div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Productivity -->
+        <div class="category">
+            <h2 class="category-title">✍️ Productivity & Writing</h2>
+            <div class="tools-grid">
+                <a href="https://www.notion.so" class="tool-card" target="_blank">
+                    <div class="tool-icon">📝</div>
+                    <div class="tool-name">Notion AI</div>
+                    <div class="tool-description">AI-powered workspace</div>
+                </a>
+                
+                <a href="https://www.grammarly.com" class="tool-card" target="_blank">
+                    <div class="tool-icon">✏️</div>
+                    <div class="tool-name">Grammarly</div>
+                    <div class="tool-description">Writing assistant</div>
+                </a>
+                
+                <a href="https://www.jasper.ai" class="tool-card" target="_blank">
+                    <div class="tool-icon">📄</div>
+                    <div class="tool-name">Jasper</div>
+                    <div class="tool-description">AI content creator</div>
+                </a>
+                
+                <a href="https://www.copy.ai" class="tool-card" target="_blank">
+                    <div class="tool-icon">✨</div>
+                    <div class="tool-name">Copy.ai</div>
+                    <div class="tool-description">Marketing copy AI</div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Search & Research -->
+        <div class="category">
+            <h2 class="category-title">🔍 Search & Research</h2>
+            <div class="tools-grid">
+                <a href="https://www.perplexity.ai" class="tool-card" target="_blank">
+                    <div class="tool-icon">🔎</div>
+                    <div class="tool-name">Perplexity</div>
+                    <div class="tool-description">AI search engine</div>
+                </a>
+                
+                <a href="https://you.com" class="tool-card" target="_blank">
+                    <div class="tool-icon">🌐</div>
+                    <div class="tool-name">You.com</div>
+                    <div class="tool-description">AI-powered search</div>
+                </a>
+                
+                <a href="https://consensus.app" class="tool-card" target="_blank">
+                    <div class="tool-icon">📚</div>
+                    <div class="tool-name">Consensus</div>
+                    <div class="tool-description">Research AI</div>
+                </a>
+                
+                <a href="https://bhindi.io" class="tool-card" target="_blank">
+                    <div class="tool-icon">🚀</div>
+                    <div class="tool-name">Bhindi</div>
+                    <div class="tool-description">Your AI command center</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
