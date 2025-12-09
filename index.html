@@ -57,6 +57,43 @@
             gap: 20px;
         }
         
+        .featured-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 20px;
+            padding: 40px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+        
+        .featured-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        }
+        
+        .featured-card .tool-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        
+        .featured-card .tool-name {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .featured-card .tool-description {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.95);
+        }
+        
         .tool-card {
             background: white;
             border-radius: 15px;
@@ -106,6 +143,10 @@
             .tool-card {
                 padding: 20px;
             }
+            
+            .featured-card {
+                padding: 30px;
+            }
         }
     </style>
 </head>
@@ -113,6 +154,18 @@
     <div class="container">
         <h1>🚀 My AI Tools Dashboard</h1>
         <p class="subtitle">One-click access to all your AI tools</p>
+        
+        <!-- Featured -->
+        <div class="category">
+            <h2 class="category-title">⭐ Featured</h2>
+            <div class="tools-grid">
+                <a href="https://theresanaiforthat.com" class="featured-card" target="_blank">
+                    <div class="tool-icon">🤖</div>
+                    <div class="tool-name">There's An AI For That</div>
+                    <div class="tool-description">Discover the perfect AI tool for any task - The largest AI tools database</div>
+                </a>
+            </div>
+        </div>
         
         <!-- Text/Chat AI -->
         <div class="category">
